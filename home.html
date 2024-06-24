@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Painel geral log</h1>
+
+    <button onclick='sair()'>Sair</button>
+
+
+<script>
+    if(localStorage('token') == null){
+        alert('Você precisa estar logado para acessar essa pagina')
+    }
+
+    function sair(){
+        localStorage.removeItem('token')
+        window.location.href = 'file:///C:/Users/ceciliana.cruz/OneDrive%20-%20MILLENIUM%20COMERCIAL%20&%20LOGOP%20DO%20GMILL%20DISTRIBUICAO%20LTDA/%C3%81rea%20de%20Trabalho/Ceci/loginesenhagmill/index.html'
+    }
+    </script>
+</body>
+</html>
