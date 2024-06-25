@@ -91,6 +91,10 @@ input .button:hover {
     gap: 5px
 }
 
+.body{
+    background-color: #023047;
+}
+
 .areaLogin img {
     width: 420px;
 }
