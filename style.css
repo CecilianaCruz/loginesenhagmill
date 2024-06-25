@@ -43,10 +43,22 @@ margin: 10px;
 
 }
 
+main h1{
+    color: #282b28;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
 
+main h2{
+    color:rgb(56, 53, 53) ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.titulo{
+    text-align: center;
+}
 
 .button:hover {
-    background-color: rgb(125, 177, 125);;
+    background-color: #b2f0b3;
 
 }
 
@@ -117,7 +129,7 @@ margin: 10px;
 }
 
 .rodape-div-4 a:hover{
-    color: rgb(158, 223, 158);
+    color: #D0FFD1;
     ;
 }
 
@@ -154,7 +166,7 @@ margin: 10px;
 
 
 .formLogin input:focus {
-    border: 1px solid rgb(131, 216, 131);
+    border: 1px solid #D0FFD1;
 }
 
 .formLogin label {
