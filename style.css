@@ -38,7 +38,7 @@ margin: 10px;
 }
 
 
-input .buttom:hover {
+input .button:hover {
     background-color: rgb(14, 34, 77);
 
 }
@@ -160,4 +160,4 @@ input .buttom:hover {
     transform: scale(1.05);
     background-color:  rgb(46, 46, 120);
 
-} </style>
+} 
