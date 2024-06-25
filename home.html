@@ -12,8 +12,10 @@
 
 
 <script>
-    if(localStorage('token') == null){
+
+    if(localStorage.getItem('token') == null){
         alert('Você precisa estar logado para acessar essa pagina')
+        window.location.href = 'file:///C:/Users/ceciliana.cruz/OneDrive%20-%20MILLENIUM%20COMERCIAL%20&%20LOGOP%20DO%20GMILL%20DISTRIBUICAO%20LTDA/%C3%81rea%20de%20Trabalho/Ceci/loginesenhagmill/index.html'
     }
 
     function sair(){

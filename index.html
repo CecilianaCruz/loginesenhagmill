@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html lang="pt">
     <head>
     <title>Login/Biblioteca</title>
@@ -207,12 +209,13 @@
         var login = document.getElementById('login').value;
         var senha = document.getElementById('senha').value;
 
-        if(login == "Millenium" && senha == "12345"){
+        if(login == "admin" && senha == "12345"){
             window.location.href = "file:///C:/Users/ceciliana.cruz/OneDrive%20-%20MILLENIUM%20COMERCIAL%20&%20LOGOP%20DO%20GMILL%20DISTRIBUICAO%20LTDA/%C3%81rea%20de%20Trabalho/Ceci/loginesenhagmill/home.html";
             
-            let token = Math.random().toString(16).substr(2)
-            console.log(token)
-
+            let token = Math.random().toString(16).substr(2) + Math.random().toString(16).substr(2)
+            localStorage.setItem('token', token)
+            //console.log(token)
+            
         }else{
             alert('Usuário ou senha inválidos')
         }
