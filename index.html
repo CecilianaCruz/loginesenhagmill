@@ -132,7 +132,8 @@
             <label for="">Senha</label>
             <input type="password" placeholder="Senha" id="senha">
             <a href="/">Esqueci minha senha</a>
-            <input type="submit" onclick="logar();return false">
+
+            <button class="buttom"><input  type="submit" onclick="logar();return false"></button>
         </form>
     </div>
 
@@ -209,7 +210,7 @@
         var login = document.getElementById('login').value;
         var senha = document.getElementById('senha').value;
 
-        if(login == "admin" && senha == "12345"){
+        if(login == "Millenium" && senha == "Gmill@202410"){
             location.href = "home.html";
             
             let token = Math.random().toString(16).substr(2) + Math.random().toString(16).substr(2)

@@ -35,11 +35,15 @@ margin: 10px;
     align-items: stretch;
     margin-top: 130px;
     margin-left: 20%;
-
-
-    
-    
 }
+
+
+input .buttom:hover {
+    background-color: rgb(14, 34, 77);
+
+}
+  
+
 .rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
     display: flex;
     width: calc(100% / 4 - 20px);
