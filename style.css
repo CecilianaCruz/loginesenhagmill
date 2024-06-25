@@ -68,6 +68,17 @@ input .button:hover {
     .rodape-div{
         padding: 60px 0px 40px 0px;
     }
+    .rodape-div-4 a{
+        color: rgb(114, 201, 114);;
+    }
+}
+
+@media (max-width: 308px) {
+    .rodape-div-4 a{
+        color: rgb(114, 201, 114);
+
+}
+
 }
 
 
@@ -93,6 +104,16 @@ input .button:hover {
 
 .body{
     background-color: #023047;
+}
+
+.rodape-div-4 a{
+    color: white;
+    margin-left: 15px;
+}
+
+.rodape-div-4 a:hover{
+    color: rgb(114, 201, 114);
+    ;
 }
 
 .areaLogin img {
