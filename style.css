@@ -1,7 +1,5 @@
 body {
     font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
     color: #023047
 }
 
@@ -40,6 +38,10 @@ margin: 10px;
 
 .button {
     background-color: rgb(210, 218, 210);;
+
+}
+
+.navbar{
 
 }
 
@@ -166,7 +168,7 @@ main h2{
 
 
 .formLogin input:focus {
-    border: 1px solid #D0FFD1;
+    border: 1px solid #7c98e4;
 }
 
 .formLogin label {
