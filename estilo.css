@@ -82,6 +82,10 @@ h1{
     }
 }
 
+.indicadores img{
+ 
+}
+
 .indicadores1{
     margin-top: 50px;
     display: flex;  
@@ -90,6 +94,20 @@ h1{
 .indicadores1 img{
     height: 80px;
     border-radius: 10px;
+}
+
+.imagem{
+    position: absolute;
+    height: 10px;
+    margin-left: 850px;
+    margin-top: 30px;
+}
+
+.imagem2{
+    position: absolute;
+    height: 10px;
+    margin-left: 640px;
+    margin-top: 190px;
 }
 
 .ind1{
