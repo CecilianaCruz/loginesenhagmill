@@ -39,13 +39,14 @@ body{
     border-color: #b2f0b3;
     background-color: #023047;
     color: white;
-    transition: 1s;
+    transition: 0.5s;
     cursor: pointer;
 }
 
 .sair:hover{
     background-color: #b2f0b3;
     color: #023047;
+    border: none;
 }
 
 h1{
