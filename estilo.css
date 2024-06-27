@@ -89,6 +89,10 @@ h1{
  
 }
 
+.indicadores .indicadores1 a{
+    text-decoration: none;
+}
+
 .indicadores1{
     margin-top: 50px;
     display: flex;  
