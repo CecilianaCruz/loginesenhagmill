@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+    <title>ID GMILL</title>
+    <meta charset="UTF-8">
+    <title> Biblioteca Virtual </title>
+    <link rel="icon" href="img/Grupo-Gmill-300x300.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+    <script>
+      document.addEventListener('contextmenu', function(event) {
+          event.preventDefault();
+      });
+  </script>
+    <!--<style> body{background: rgb(36,74,110);
+background: linear-gradient(90deg, rgba(36,74,110,1) 37%, rgba(36,74,110,0.9640231092436975) 75%, rgba(36,74,110,0.8071603641456583) 98%);};</style>
+    -->
+</head>
+
+
+<body>
+
+  <!--
+  <div class="imgfundo"> -->
+
+    <div class="container">
+
+               
+    </div>
+              
+
+
+            
+
+          </main>
+        </div>
+
+
+
+
+
+          
+<script>
+
+    if(localStorage.getItem('token') == null){
+        alert('Você precisa estar logado para acessar essa pagina')
+        location.href = 'index.html'
+    }
+
+    function sair(){
+        localStorage.removeItem('token')
+        location.href = 'index.html'
+    }
+    </script>
+
+    
+    </body>
+    </html>
