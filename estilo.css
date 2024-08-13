@@ -66,6 +66,36 @@ h1{
     margin-left: 25%;
 }
 
+.opcoes {
+    display: none; /* Esconde as opções inicialmente */
+    color: white;
+}
+
+.opcoes a{
+    color: white;
+}
+
+.mostrar {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.maisopcoes{
+    display: block;
+    margin: auto;
+    color: white;
+}
+
+
+.maisopcoes a:hover{
+    font-weight: bold;
+}
+
+.maisopcoes a{
+    text-decoration: none;
+}
+
 .barra2{
     display: flex;
 }

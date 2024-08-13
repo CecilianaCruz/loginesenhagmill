@@ -25,7 +25,7 @@ background: linear-gradient(90deg, rgba(36,74,110,1) 37%, rgba(36,74,110,0.96402
   <!-- <img src="img/images.jfif" alt="" style="position: absolute; width: 100%; z-index: -1">-->
     <div class="container">
     <div class="logo">
-      <a href="home.html"> <img src="img/Grupo-Gmill-300x300.png" height="70px"></a>
+      <a href="home.html"> <img src="img/Grupo-Gmill-300x300.png" height="50px"></a>
     </div>
       <div class="titulo">
       <p style="margin-left: 15px"><strong> Painel de Indicadores - Logística</strong></p>
@@ -118,13 +118,24 @@ background: linear-gradient(90deg, rgba(36,74,110,1) 37%, rgba(36,74,110,0.96402
                       <img src="img/geograficp.png" style="background-color: #dcfcec;height: 20px;">
                       <p>Acesso CD-RJ</p>
                     </div></a>
-                    <div class="linha"></div>
-                    <a href="https://cecilianacruz.github.io/Gmill/" target="_blank">
-                      <div class="ind1">
-                        <img src="img/site.png" style="background-color: #dcfcec; height: 20px;">
-                        <p>Slide TV</p>
-                      </div></a>
-                </div>
+                        <div class="linha"></div>
+                        <div class="ind1"  onclick="mostrarOpcoes()">
+                          <img src="img/site.png" style="background-color: #dcfcec; height: 20px;">
+                          <div class="maisopcoes">
+                            <div class="maisopcoes2" style="display: flex; text-align: center; justify-content: center; align-items: center;">
+                          <p class="mostrar">Slide TV   
+                            <svg style="margin-left: 10px;" xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                            </svg></div></p>
+                          <div id="opcoes" class="opcoes">
+                            <BR>
+                            <a href="https://cecilianacruz.github.io/Gmill/" target="_blank"><p type="checkbox" name="opcao1">Slide TV - RJ</p></a>
+                            <BR>
+                            <a href="https://cecilianacruz.github.io/Gmill-indoor---ES/" target="_blank"><p type="checkbox" name="opcao2">Slide TV - ES</p></a>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
               </div>
 
 
@@ -140,8 +151,16 @@ background: linear-gradient(90deg, rgba(36,74,110,1) 37%, rgba(36,74,110,0.96402
       
 
 
-
-
+      <script>
+        function mostrarOpcoes() {
+            var opcoes = document.getElementById("opcoes");
+            if (opcoes.style.display === "none") {
+                opcoes.style.display = "block"; // Mostra as opções
+            } else {
+                opcoes.style.display = "none"; // Esconde as opções se já estiverem visíveis
+            }
+        }
+    </script>
 
           
 <script>
