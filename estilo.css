@@ -61,9 +61,13 @@ h1{
 .opa2{
     height: 1000px;
     width: 1000px;
-    background-color: #022638;
+ /*   background-color: #022638;*/
     position: absolute;
-    margin: auto;
+    margin-left: 25%;
+}
+
+.barra2{
+    display: flex;
 }
 
 .titulo p{
