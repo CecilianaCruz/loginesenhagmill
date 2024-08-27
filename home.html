@@ -168,7 +168,12 @@ background: linear-gradient(90deg, rgba(36,74,110,1) 37%, rgba(36,74,110,0.96402
         }
     </script>
 
-          
+
+  // Executa a função quando a página é carregada
+  window.onload = verificarLogin;
+</script>       
+
+
 <script>
 
     if(localStorage.getItem('token') == null){
@@ -185,3 +190,5 @@ background: linear-gradient(90deg, rgba(36,74,110,1) 37%, rgba(36,74,110,0.96402
     
     </body>
     </html>
+
+
