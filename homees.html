@@ -14,6 +14,58 @@
     <!--<style> body{background: rgb(36,74,110);
 background: linear-gradient(90deg, rgba(36,74,110,1) 37%, rgba(36,74,110,0.9640231092436975) 75%, rgba(36,74,110,0.8071603641456583) 98%);};</style>
     -->
+
+    <style>
+      /* Estilos para o menu */
+  .menu {
+      position: relative;
+      display: inline-block;
+  }
+  
+  .menu-item {
+      position: relative;
+  }
+  
+  /* Estilo para a opção principal */
+  .main-option {
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #333;
+      background-color: #023047;
+      display: block;
+      border-radius: 5px;
+  }
+  
+  /* Estilo para o submenu */
+  .submenu {
+      display: none; /* Esconde as opções adicionais por padrão */
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #023047;
+      border-radius: 5px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+  }
+  
+  .submenu-option {
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #333;
+      display: block;
+      white-space: nowrap;
+  }
+  
+  .submenu-option:hover {
+      background-color: #023047;
+  }
+  
+  /* Mostra o submenu ao passar o mouse sobre a opção principal */
+  .menu-item:hover .submenu {
+      display: block;
+  }
+  
+     </style>
 </head>
 
 
@@ -74,6 +126,16 @@ background: linear-gradient(90deg, rgba(36,74,110,1) 37%, rgba(36,74,110,0.96402
                
                          
                       <button class="sair" onclick="sair()"><strong> Sair</strong></button>
+
+                      <div class="menu">
+                        <div class="menu-item">
+                            <a href="#" class="main-option">Alterar CD</a>
+                            <div class="submenu">
+                                <a href="home.html" class="submenu-option">Acesso Gral</a>
+                                <a href="homerj.html" class="submenu-option">Somente CD-RJ</a>
+                            </div>
+                        </div>
+                    </div>
     </svg> 
     </div>
                 </div>
@@ -156,11 +218,11 @@ background: linear-gradient(90deg, rgba(36,74,110,1) 37%, rgba(36,74,110,0.96402
       
       <script>
         // Verifica se o usuário tem acesso à home
-        if (localStorage.getItem('nivel') !== 'Acesso ES' & 'Acesso Geral') {
-            // Redireciona para a página de login caso o nível de acesso seja inválido
-            alert('Você não tem permissão para acessar esta página.');
-            location.href = 'index.html';
-        }
+        if (localStorage.getItem('nivel') !== 'Acesso ES' && localStorage.getItem('nivel') !== 'Acesso geral') {
+    // Redireciona para a página de login caso o nível de acesso seja inválido
+    alert('Você não tem permissão para acessar esta página.');
+    location.href = 'index.html';
+}
       </script>      
 
       <script>
