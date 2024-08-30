@@ -66,7 +66,6 @@ background: linear-gradient(90deg, rgba(36,74,110,1) 37%, rgba(36,74,110,0.96402
   }
   
      </style>
-
 </head>
 
 
@@ -78,10 +77,10 @@ background: linear-gradient(90deg, rgba(36,74,110,1) 37%, rgba(36,74,110,0.96402
   <!-- <img src="img/images.jfif" alt="" style="position: absolute; width: 100%; z-index: -1">-->
     <div class="container">
     <div class="logo">
-      <a href="homerj.html"> <img src="img/Grupo-Gmill-300x300.png" height="50px"></a>
+      <a href="homees.html"> <img src="img/Grupo-Gmill-300x300.png" height="50px"></a>
     </div>
       <div class="titulo">
-      <p style="margin-left: 15px"><strong> Painel de Indicadores - Logística RJ</strong></p>
+      <p style="margin-left: 15px"><strong> Painel de Indicadores - Logística ES</strong></p>
 
     </div>
         <nav class="navbar navbar-expand-lg bg-#77" style="width: 100%;">
@@ -127,16 +126,17 @@ background: linear-gradient(90deg, rgba(36,74,110,1) 37%, rgba(36,74,110,0.96402
                
                          
                       <button class="sair" onclick="sair()"><strong> Sair</strong></button>
+
                       <div class="menu">
                         <div class="menu-item">
                             <a href="#" class="main-option">Alterar CD</a>
                             <div class="submenu">
                                 <a href="home.html" class="submenu-option">Acesso Gral</a>
-                                <a href="homees.html" class="submenu-option">Somente CD-ES</a>
+                                <a href="homerj.html" class="submenu-option">Somente CD-RJ</a>
                             </div>
                         </div>
                     </div>
-                    </svg> 
+    </svg> 
     </div>
                 </div>
 
@@ -154,45 +154,44 @@ background: linear-gradient(90deg, rgba(36,74,110,1) 37%, rgba(36,74,110,0.96402
               <a href="home.html">
                 <div class="ind1" style="background-color: #b2f0b3; color: #023047; font-weight: bold; border-radius: none;">
                  <img src="img/geral.png "   style=" height: 30px;">
-                 <p>Indicadores Operacionais RJ</p>
+                 <p>Indicadores Operacionais ES</p>
                </div></a>
                <div class="linha"></div>
-              <a href="idgmill.html">
+              <a href="idgmilles.html">
                <div class="ind1">
                 <img src="img/idgmill.png"   style=" height: 30px;">
-                <p>ID GMILL RJ</p>
+                <p>ID GMILL ES</p>
               </div></a>
               <div class="linha"></div>
-                <a href="geograficorj.html">
+                <!--<a href="geograficorj.html">
                   <div class="ind1">
                     <img src="img/geografic1.png" style=" height: 30px;">
                     <p>Geográfico RJ</p>
-                  </div></a>
+                  </div></a>-->
                   <div class="linha"></div>
-                 <!-- <a href="geograficoes.html">
+                  <a href="geograficoeses.html">
                   <div class="ind1">
                     <img src="img/geografc2.png" style="height: 30px;">
                     <p>Geográfico ES </p>
-                  </div></a>-->
+                  </div></a>
                   <div class="linha"></div>
-                  <a href="acessorj.html">
+                  <!--<a href="acessorj.html">
                     <div class="ind1">
                       <img src="img/acess.png" style="height: 30px;">
                       <p>Acesso CD-RJ</p>
-                    </div></a>
-                    <a href="produtividade.html">
+                    </div></a>-->
+                    <a href="produtividadees.html">
                         <div class="ind1">
                           <img src="img/acess.png" style="height: 30px;">
-                          <p>Produtividade RJ</p>
+                          <p>Produtividade ES</p>
                         </div></a>
                         <div class="linha"></div>
-                        <a href="https://cecilianacruz.github.io/Gmill/" target="_blank">
+                        <a href="https://cecilianacruz.github.io/Gmill-indoor---ES/" target="_blank">
                           <div class="ind1">
                             <img src="img/tv.png" style="height: 30px;">
-                            <p>Slide TV - RJ</p>
+                            <p>Slide TV - ES</p>
                           </div></a>
-
-                     <!--   <div class="linha"></div>
+<!--
                         <div class="ind1"  onclick="mostrarOpcoes()">
                           <img src="img/tv.png" style=" height: 30px;">
                           <div class="maisopcoes">
@@ -225,7 +224,7 @@ background: linear-gradient(90deg, rgba(36,74,110,1) 37%, rgba(36,74,110,0.96402
       
       <script>
         // Verifica se o usuário tem acesso à home
-        if (localStorage.getItem('nivel') !== 'Acesso RJ' && localStorage.getItem('nivel') !== 'Acesso geral') {
+        if (localStorage.getItem('nivel') !== 'Acesso ES' && localStorage.getItem('nivel') !== 'Acesso geral') {
     // Redireciona para a página de login caso o nível de acesso seja inválido
     alert('Você não tem permissão para acessar esta página.');
     location.href = 'index.html';
