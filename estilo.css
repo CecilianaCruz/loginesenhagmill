@@ -45,7 +45,54 @@ body{
 }
 
 
-
+    /* Estilos para o menu */
+    .menu {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .menu-item {
+        position: relative;
+    }
+    
+    /* Estilo para a opção principal */
+    .main-option {
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #333;
+        background-color: #023047;
+        display: block;
+        border-radius: 5px;
+    }
+    
+    /* Estilo para o submenu */
+    .submenu {
+        display: none; /* Esconde as opções adicionais por padrão */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #023047;
+        border-radius: 5px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    .submenu-option {
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #333;
+        display: block;
+        white-space: nowrap;
+    }
+    
+    .submenu-option:hover {
+        background-color: #023047;
+    }
+    
+    /* Mostra o submenu ao passar o mouse sobre a opção principal */
+    .menu-item:hover .submenu {
+        display: block;
+    }
 
 
 .sair:hover{
